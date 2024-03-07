@@ -42,12 +42,14 @@ namespace Car_parking
                 " dbo.parkings.indate AS InDate," +
                 " dbo.parkings.outtime AS OutTime," +
                 " dbo.parkings.outdate AS OutDate," +
+                " DATEDIFF(MINUTE, dbo.parkings.outtime, dbo.parkings.intime) AS MinuteDiff,"+
                 " dbo.parkings.price AS Price," +
                 " dbo.parkings.note AS Note," +
                 " dbo.vehicle.vehicle_type AS VehicleType," +
                 " dbo.vehicle.vehicle_no AS VehicleNo," +
                 " dbo.vehicle_owners.owner_name As OwnerName," +
-                " dbo.vehicle_owners.owner_phone AS OwnerPhoneNo FROM dbo.parkings LEFT JOIN dbo.parking_slots ON dbo.parking_slots.slot_id = dbo.parkings.slot_id LEFT JOIN dbo.vehicle ON dbo.vehicle.vehicle_id = dbo.parkings.vehicle_number LEFT JOIN dbo.vehicle_owners ON dbo.vehicle_owners.owner_id = dbo.parkings.vehicle_owner", cmd.Connection);
+                " dbo.vehicle_owners.owner_phone AS OwnerPhoneNo FROM dbo.parkings LEFT JOIN dbo.parking_slots ON dbo.parking_slots.slot_id = dbo.parkings.slot_id LEFT JOIN dbo.vehicle ON dbo.vehicle.vehicle_id = dbo.parkings.vehicle_number LEFT JOIN dbo.vehicle_owners ON dbo.vehicle_owners.owner_id = dbo.parkings.vehicle_owner" +
+                " WHERE dbo.parkings.outtime!=null", cmd.Connection);
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = cmd2;
             DataTable dt = new DataTable();

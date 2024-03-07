@@ -37,11 +37,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.timetext = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.phone = new System.Windows.Forms.TextBox();
+            this.vehicletype = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.slot = new System.Windows.Forms.TextBox();
-            this.vehicleowner = new System.Windows.Forms.TextBox();
-            this.vehicleno = new System.Windows.Forms.TextBox();
+            this.indatetext = new System.Windows.Forms.TextBox();
+            this.intimetext = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.datetext = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
@@ -142,13 +142,13 @@
             this.label7.TabIndex = 36;
             this.label7.Text = "Out Time";
             // 
-            // phone
+            // vehicletype
             // 
-            this.phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phone.Location = new System.Drawing.Point(208, 457);
-            this.phone.Name = "phone";
-            this.phone.Size = new System.Drawing.Size(296, 27);
-            this.phone.TabIndex = 35;
+            this.vehicletype.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vehicletype.Location = new System.Drawing.Point(208, 457);
+            this.vehicletype.Name = "vehicletype";
+            this.vehicletype.Size = new System.Drawing.Size(296, 27);
+            this.vehicletype.TabIndex = 35;
             // 
             // label6
             // 
@@ -156,9 +156,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(66, 457);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 20);
+            this.label6.Size = new System.Drawing.Size(105, 20);
             this.label6.TabIndex = 34;
-            this.label6.Text = "Phone No";
+            this.label6.Text = "Vehicle Type";
             // 
             // slot
             // 
@@ -168,21 +168,21 @@
             this.slot.Size = new System.Drawing.Size(296, 27);
             this.slot.TabIndex = 33;
             // 
-            // vehicleowner
+            // indatetext
             // 
-            this.vehicleowner.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vehicleowner.Location = new System.Drawing.Point(208, 410);
-            this.vehicleowner.Name = "vehicleowner";
-            this.vehicleowner.Size = new System.Drawing.Size(296, 27);
-            this.vehicleowner.TabIndex = 32;
+            this.indatetext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.indatetext.Location = new System.Drawing.Point(208, 410);
+            this.indatetext.Name = "indatetext";
+            this.indatetext.Size = new System.Drawing.Size(296, 27);
+            this.indatetext.TabIndex = 32;
             // 
-            // vehicleno
+            // intimetext
             // 
-            this.vehicleno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vehicleno.Location = new System.Drawing.Point(208, 368);
-            this.vehicleno.Name = "vehicleno";
-            this.vehicleno.Size = new System.Drawing.Size(296, 27);
-            this.vehicleno.TabIndex = 31;
+            this.intimetext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.intimetext.Location = new System.Drawing.Point(208, 368);
+            this.intimetext.Name = "intimetext";
+            this.intimetext.Size = new System.Drawing.Size(296, 27);
+            this.intimetext.TabIndex = 31;
             // 
             // label5
             // 
@@ -190,9 +190,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(66, 412);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 20);
+            this.label5.Size = new System.Drawing.Size(63, 20);
             this.label5.TabIndex = 30;
-            this.label5.Text = "Vehicle Owner";
+            this.label5.Text = "In Date";
             // 
             // datetext
             // 
@@ -209,9 +209,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(66, 369);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 20);
+            this.label4.Size = new System.Drawing.Size(64, 20);
             this.label4.TabIndex = 28;
-            this.label4.Text = "Vehicle No";
+            this.label4.Text = "In Time";
             // 
             // label3
             // 
@@ -254,11 +254,11 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.timetext);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.phone);
+            this.Controls.Add(this.vehicletype);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.slot);
-            this.Controls.Add(this.vehicleowner);
-            this.Controls.Add(this.vehicleno);
+            this.Controls.Add(this.indatetext);
+            this.Controls.Add(this.intimetext);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.datetext);
             this.Controls.Add(this.label4);
@@ -290,11 +290,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker timetext;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox phone;
+        private System.Windows.Forms.TextBox vehicletype;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox slot;
-        private System.Windows.Forms.TextBox vehicleowner;
-        private System.Windows.Forms.TextBox vehicleno;
+        private System.Windows.Forms.TextBox indatetext;
+        private System.Windows.Forms.TextBox intimetext;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker datetext;
         private System.Windows.Forms.Label label4;

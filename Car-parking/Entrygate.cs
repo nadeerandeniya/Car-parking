@@ -91,7 +91,7 @@ namespace Car_parking
             SqlCommand cmd4 = new SqlCommand(querry3, cmd.Connection);
             cmd4.ExecuteNonQuery();
 
-            string querry6 = "Update parking_slots SET status='Parked' WHERE slot_id="+ slot.Text.ToString() + "";
+            string querry6 = "Update parking_slots SET status='Parked' WHERE slot_id='"+ slot.Text.ToString() + "'";
             SqlCommand cmd5 = new SqlCommand(querry6, cmd.Connection);
             cmd5.ExecuteNonQuery();
 

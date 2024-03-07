@@ -37,5 +37,11 @@ namespace Car_parking
         {
             this.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new Fees().Show();
+            this.Close();
+        }
     }
 }
